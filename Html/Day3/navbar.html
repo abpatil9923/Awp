@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>like</title>
+
+    <style>
+
+        body{
+
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar{
+
+            display: flex;
+            height: 60px;
+            background-color: #6a1b9a;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .navcontent{
+
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid white;
+            padding: 3px 10px 3px 10px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px rgb(134, 134, 134);
+        }
+
+        .like button{
+
+            border: 1px solid #6a1b9a; 
+            background-color: transparent;
+            height: 40px;
+            width: 100px;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+        .like button:hover{
+
+            background-color:#6a1b9a ;
+            color: white;
+
+        }
+        .likecount button{
+            background-color:#6a1b9a ;
+            border: 1px solid #6a1b9a; 
+            height: 40px;
+            width: 100px;
+            margin-left: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    
+     <div class="navbar">
+
+        <div class="navcontent">Home</div>
+        <div class="navcontent">About Us</div>
+        <div class="navcontent">SignIn</div>
+
+     </div>
+
+    <div class="likebox" style="display: flex; 
+    align-items: center; justify-content: center; margin-top: 300px;">
+        <div class="like" ><button  id="like">Like 1</button></div>
+        <div class="likecount" ><button  id="likecount"></button></div>
+        <div class="like" ><button onclick="dislike()" id="dislike">DisLike 1</button></div>
+    </div>
+</body>
+
+
+<script>
+
+    var likecounter = 1;  
+    
+
+    function like(){
+
+        let likelement = document.getElementById("likecount");
+
+        likecounter = likecounter + 1 ;
+
+        console.log("hello");
+
+        likelement.innerHTML =likecounter;
+
+
+    }
+
+   
+
+
+    function dislike(){
+
+        var dislikelement = document.getElementById("likecount");
+        
+        likecounter = likecounter - 1 ;
+
+        dislikelement.innerHTML = likecounter;
+
+    }
+
+    document.getElementById("like").onclick = like;
+
+</script>
+
+
+</html>

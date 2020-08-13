@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        :root {
+            --headfont:'Patua One', cursive;;
+            --subfont:'Assistant', sans-serif;;
+            --backcol:#e91e63 ;
+            --subcol:#263238 ;
+        }
+
+        .heading{
+
+            margin-left: 30px; 
+            margin-bottom: 10px;
+            font-size: 17px; 
+            font-weight: bold; 
+            font-family:var(--headfont);
+            color: var(--backcol);
+        }
+
+        .subhead{
+
+            margin: 2px 0px 2px 30px;
+            font-family: var(--subfont);
+        }
+
+        body {
+
+            background-color: rgb(184, 184, 184);
+        }
+
+        .cantainer {
+
+            display: flex;
+            flex-direction: column;
+            margin: 0px 200px 0px 200px;
+
+        }
+
+        .subcantainer1 {
+
+            flex: 0.5;
+            display: flex;
+            background-color: white;
+
+        }
+
+        .subcantainer2 {
+
+            flex: 3;
+            display: flex;
+            border: 1px solid rgb(184, 184, 184);
+            border-top: none;
+            background-color: white;
+        }
+
+        /* ---------------------------------------------------------------------------------------------- */
+        .subcantainer2_1 {
+
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+
+        .subcantainer2_1_born {
+
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+
+        .subcantainer2_1_contact {
+
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+
+        .subcantainer2_1_languages {
+
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+
+        .subcantainer2_1_intrest {
+
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+
+        .subcantainer2_1_travel {
+
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+
+        /* ------------------------------------------------------------------------------------------------- */
+        .subcantainer2_2 {
+
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+
+        .subcantainer2_2_1{
+
+            flex: 1;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+        .subcantainer2_2_2{
+
+            flex: 1;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+        .subcantainer2_2_3{
+
+            flex: 1;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+        .subcantainer2_2_4{
+
+            flex: 1;
+            border: 1px solid rgb(184, 184, 184);
+
+        }
+
+        /* ------------------------------------------------------------------------------------- */
+
+
+        .profilephoto {
+
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px 10px 0px;
+            border: 1px solid rgb(184, 184, 184);
+        }
+
+        .profilename {
+
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            border-left: none;
+            border: 1px solid rgb(184, 184, 184);
+            background: linear-gradient(to bottom, #ec407a 20%, #880e4f 100%);
+        }
+
+        .photo {
+
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 1px solid var(--backcol);
+        }
+
+        .photo img {
+
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+        }
+
+        .name {
+
+            flex: 1;
+            border-left: none;
+        }
+
+        .expert {
+
+            flex: 1;
+            border-left: none;      
+        }
+
+        .name h2 {
+
+            margin: 60px 0px 0px 10px;
+            color: white;
+        }
+
+        .expert h4 {
+
+            margin: 10px 0px 0px 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cantainer">
+        <div class="subcantainer1">
+            <div class="profilephoto">
+                <div class="photo">
+                    <img src="passportphoto.jpg" alt="">
+                </div>
+            </div>
+            <div class="profilename">
+                <div class="name">
+                    <h2> Atul Bapurao Patil</h2>
+                </div>
+                <div class="expert">
+                    <h4>Web Developer & UI expert</h4>
+                </div>
+            </div>
+        </div>
+        <div class="subcantainer2">
+            <div class="subcantainer2_1">
+                <div class="subcantainer2_1_born">
+                    <div class="heading">
+                        BORN</div>
+                    <div class="subhead">Sept-28-1997</div>
+                    <div class="subhead">Father's name : Bapurao Patil</div>
+                </div>
+                <div class="subcantainer2_1_contact">
+                    <div class="heading">CONTACT</div>
+                    <div class="subhead">Mobile No : 9881580895</div>
+                    <div class="subhead">Email : abpatil9923@gmail.com</div>
+                </div>
+                <div class="subcantainer2_1_languages">
+                    <div class="heading">LANGUAGES</div>
+                    <div class="subhead">English ,Marathi</div>
+                    <div class="subhead">Hindi</div>
+                </div>
+                <div class="subcantainer2_1_intrest">
+                    <div class="heading">INTREST</div>
+                    <div class="subhead">UI-Designing</div>
+                    <div class="subhead">Listening To Music & Travelling</div>
+                </div>
+                <div class="subcantainer2_1_travel">
+                    <div class="heading">TRAVEL</div>
+                </div>
+            </div>
+            <div class="subcantainer2_2">
+
+                <div class="subcantainer2_2_1">
+                    <div class="heading">About Atul Patil</div>
+                    <div class="subhead">Lorem ipsum Fugit voluptate in ad harum asperiores, omnis eum tenetur
+                         obcaecati quia mollitia. Nobis, omnis. Aut nostrum</div>
+                </div>
+                <div class="subcantainer2_2_2"></div>
+                <div class="subcantainer2_2_3"></div>
+                <div class="subcantainer2_2_4"></div>2
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

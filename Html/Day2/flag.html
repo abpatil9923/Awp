@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 220px;
+        }
+
+        img {
+
+            width: 150px;
+            height: 150px;
+            margin-left: 590px;
+            margin-top: 30px;
+        }
+
+        .rotate {
+            animation: rotation 3s;
+        }
+
+        .linear {
+            animation-timing-function: linear;
+        }
+
+        .infinite {
+            animation-iteration-count: infinite;
+        }
+
+        .rotate-image {
+            animation: rotation 2s linear infinite;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div style="background-color: orangered;" class="box"></div>
+    <div class="box">
+        <img class="rotate linear infinite" src="/flagWheel.png" alt="">
+    </div>
+    <div style="background-color: green;" class="box"></div>
+
+</body>
+
+</html>
